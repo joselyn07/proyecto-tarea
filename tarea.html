@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="tarea.css">
+    <title>Proyecto tarea</title>
 </head>
-<body>
+<body class="sisi">
+    <div class="anaranjado">
+    <center> 
+    <h1 class="titulo"> Tareas por hacer</h1>
+</center> 
+
+<div class="principal">
+    <div class="caja">
+        <form class="formulario" action="">
+            <input type="text" id="tarea" placeholder="Agrega tu tarea"><br>
+            <input type="button" class="boton" id="btn" value="Agregar">
+        </form>
+    </div>
+    <div class="content">
+
+        <h2 class="complet">Tareas completadas</h2>
+        <div class="circulo">
+            <center> <h2 class="color">0</h2></center>
+            
+        </div>
+    </div>
+</div>
+
+<div class="jimin" id="cajaTareas">
+    <!-- <h3 class="letra">No hay tareas</h3> -->
+
+    <div class="contenedorTarea">
+        <input type="checkbox" id="un">
+    <label for="uno">Hacer un diseño</label>
+
+</div>
+</div>
+<script src="tarea.js"></script>
+
+
+
+    <script>
+
+        function ConfirmDemo() {
+            //Ingresamos un mensaje
+            var mensaje = confirm("¿realizaste tus tareas?");
+            //Verificamos si el usuario acepto el mensaje
+            if (mensaje) {
+            alert("¡Gracias por confirmar!");
+            }
+            //Verificamos si el usuario denegó el mensaje
+            else {
+            alert("¡Haz denegado el mensaje!");
+            }
+        }
+
+    </script>
+
+    <input type="button" class="button" onclick="ConfirmDemo();" value="Confirmar"/>
     
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
