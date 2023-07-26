@@ -16,9 +16,14 @@
     <div class="caja">
         <form class="formulario" action="">
             <input type="text" id="tarea" placeholder="Agrega tu tarea"><br>
-            <input type="button" class="boton" id="btn" value="Agregar">
+            <input  type="button" class="boton" id="btn" value="Agregar">
+            <input type="button" class="button" onclick="ConfirmDemo();" value="Confirmar"/>
         </form>
     </div>
+
+        </script>
+        
+
     <div class="content">
 
         <h2 class="complet">Tareas completadas</h2>
@@ -31,16 +36,10 @@
 
 <div class="jimin" id="cajaTareas">
     <!-- <h3 class="letra">No hay tareas</h3> -->
-
-    <div class="contenedorTarea">
-        <input type="checkbox" id="un">
-    <label for="uno">Hacer un diseño</label>
-
 </div>
 </div>
+
 <script src="tarea.js"></script>
-
-
 
     <script>
 
@@ -56,10 +55,7 @@
             alert("¡Haz denegado el mensaje!");
             }
         }
-
     </script>
-
-    <input type="button" class="button" onclick="ConfirmDemo();" value="Confirmar"/>
     
 </body>
 </html>
