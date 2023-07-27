@@ -14,24 +14,22 @@ btn.addEventListener('click', function(){
         itemCaja.id = 'contenedorTarea'
         itemCaja.innerHTML= `
         <div id='Tarea'>
-        <input type="checkbox" id="uno">
-        <label class='task' for="uno">${tarea.value}</label>
+        <input type="checkbox" class='checks' onchange="contador()">
+        <label class='task'>${tarea.value}</label>
         </div>
-        <button onclick="eliminar()" onclick="myFunction()">eliminar</button>
+        <button onclick="eliminar()">eliminar</button>
         `;
         cajaTareas.appendChild(itemCaja);
     }else{
         alert('La tarea ya existe')
     }
-    
-
 })
 
 function eliminar(){
     const tarea = document.getElementById('contenedorTarea')
     console.log(tarea)
-
-    tarea.remove()
+    tarea.remove();
+    contador()
 }
 
 function verificar(task){
@@ -44,3 +42,16 @@ function verificar(task){
     return true
 }
 
+function contador(){
+    const con =document.getElementById('con');
+    //const checks=document.getElementsByClassName('checks')
+    const checks=document.querySelectorAll('.checks')
+    let cont=0;
+    for (let i =0; i < checks.length; i++) {
+        if (checks[i].checked===true) {
+            cont++;
+            //cont=cont+1;
+        }
+    }
+    con.textContent=cont;
+}

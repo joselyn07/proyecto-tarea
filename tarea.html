@@ -14,9 +14,9 @@
 
 <div class="principal">
     <div class="caja">
-        <form class="formulario" action="">
-            <input type="text" id="tarea" placeholder="Agrega tu tarea"><br>
-            <input  type="button" class="boton" id="btn" value="Agregar">
+        <form class="formulario" onsubmit=" return false">
+            <input type="text" required id="tarea"  placeholder="Agrega tu tarea"><br>
+        <input type="submit" class="boton" id="btn" value="Agregar" > 
             <input type="button" class="button" onclick="ConfirmDemo();" value="Confirmar"/>
         </form>
     </div>
@@ -28,14 +28,14 @@
 
         <h2 class="complet">Tareas completadas</h2>
         <div class="circulo">
-            <center> <h2 class="color">0</h2></center>
+            <center> <h2 class="color" id="con">0</h2></center>
             
         </div>
     </div>
 </div>
 
 <div class="jimin" id="cajaTareas">
-    <!-- <h3 class="letra">No hay tareas</h3> -->
+    <h3 class="letra">No hay tareas pendientes</h3> 
 </div>
 </div>
 
