@@ -44,13 +44,11 @@ function verificar(task){
 
 function contador(){
     const con =document.getElementById('con');
-    //const checks=document.getElementsByClassName('checks')
     const checks=document.querySelectorAll('.checks')
     let cont=0;
     for (let i =0; i < checks.length; i++) {
         if (checks[i].checked===true) {
             cont++;
-            //cont=cont+1;
         }
     }
     con.textContent=cont;
